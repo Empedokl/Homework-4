@@ -259,7 +259,7 @@ a{
     color: #ffffff;
     font-size: 14px;
     line-height: 32px;
-    background-image: url("./img/basket.png");
+    background-image: url("../img/basket.png");
     background-repeat: no-repeat;
     background-position: left 12px center;
     padding-left:60px ;
@@ -267,13 +267,13 @@ a{
    
   }
   .overlay-list-item-button-favorites{
-    background-image: url("./img/favorites.png");
+    background-image: url("../img/favorites.png");
   }
   .overlay-list-item-button-comparison{
-      background-image: url("./img/comparison.png");
+      background-image: url("../img/comparison.png");
   }
   .overlay-list-item-button-clock{
-      background-image: url("./img/clock.png");
+      background-image: url("../img/clock.png");
   }
   .overlay-list{
       position: absolute;
