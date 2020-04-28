@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+img {
+    display: block;
+
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.visually-hidden {
+      position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  body{
+      font-family: "Roboto", sans-serif;
+  }
+  .container{
+      width: 1110px;
+      margin: 0 auto;
+  }
+  .logo-link{
+      color: #555252;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    float: left;
+  }
+  .logo-link::first-letter{
+        color: #1abc9c;
+    font-weight: 900;
+  }
+  .page-nav {
+    padding-bottom: 32px;
+    padding-top: 36px;
+  }
+  .site-navigation{
+      float: right;
+      margin-top: 7px;
+  }
+  .site-navigation-item{
+      float: left;
+  }
+  .site-navigation-item:not(:last-child){
+      margin-right: 30px;
+  }
+  .site-navigation-link{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 11px;
+    color: #0f0101;
+
+  }
+  .site-navigation-link:hover{
+    color: #1abc9c;
+  }
+  .slider{
+      position: relative;
+  }
+
+  .sliders-image-item {
+      height: 600px;
+      width: 100%;
+      object-fit: cover;
+  }
+  .sliders-image::before{
+    content: "";
+    position: absolute;
+      width: 100%;
+      height: 600px;
+   background-color:rgba(0, 0, 2, 0.5);
+
+  }
+  .sliders-item{
+      position: relative;
+  }
+  .sliders-item-name{
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      color: #ffffff;
+      
+      
+  }
+  .sliders-item-title{
+      font-size: 60px;
+      line-height: 82px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      
+  }
+  .sliders-item-description{
+      font-size: 24px;
+      line-height: 54px;
+      font-weight: 300;
+  }
+  
+
+  .buttons{
+ position: absolute;
+ left: 50%;
+ top:225px;
+ transform: translateX(-50%)
+  }
+  .slider-ctrl{
+    background-color: rgba(78, 198, 171, 0.65);
+    width: 104px;
+  height: 104px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  }
+
+  .slider-ctrl:hover{
+    background-color: rgb(78, 198, 171);
+
+  }
+  .slider-ctrl-prev{
+      float: left;
+      background-image: url("../img/prev-arrow.png");
+
+  }
+  .slider-ctrl-next{
+     float: right;
+     background-image: url("../img/next-arrow.png");
+  }
+.collection{
+    background: #e9f0fd;
+    padding-top: 96px;
+}
+.collection-title{
+    font-size: 48px;
+    line-height: 58px;
+    color: #515151;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+.collection-title::after{
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 80px;
+}
+.collection-list-item{
+    float: left;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.collection-list-item:not(:last-child){
+    margin-right: 30px;
+}
+.collection-list-item-link{
+    background-color: #323232;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 800;
+    color:  #ffffff;
+    text-transform: uppercase;
+    
+}
+.collection-list-item-cost{
+    float: right;
+    width: 54px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.44);
+}
+.collection-item-name{
+    float: left;
+    padding-left: 13px;
+}
+.collection-list-item-link:hover{
+    background-color: #1abc9c;
+}
+.collection-list-item:hover .overlay{
+    display: block;
+
+}
+.overlay-list-item-button{
+    display:block;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+
+  .overlay-list-item-button{
+      margin-right: 8px;
+      margin-bottom: 7px;
+  }
+  .overlay-list-item-button:hover{
+      background-color: #1abc9c;
+      border-color: #1abc9c;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 282px;
+    width: 255px;
+    border: 10px solid rgba(255, 255, 255, 0.55);
+    background-clip: padding-box;
+    display: none;
+  }
+
+  .overlay-list-item-button-basket {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(50, 50, 50);
+    width: 166px;
+    height: 50px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 32px;
+    background-image: url("/img/basket.png");
+    background-repeat: no-repeat;
+    background-position: left 12px center;
+    padding-left:60px ;
+    text-align: left;
+   
+  }
+  .overlay-list-item-button-favorites{
+    background-image: url("/img/favorites.png");
+  }
+  .overlay-list-item-button-comparison{
+      background-image: url("/img/comparison.png");
+  }
+  .overlay-list-item-button-clock{
+      background-image: url("/img/clock.png");
+  }
+  .overlay-list{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 174px;
+  }
+  
+.footer{
+    background-color: #323232;
+    height: 88px;
+    text-align: center;   
+}
+
+.about-us{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 88px;      
+}
+
+.about-us li{
+    display: inline-block;    
+}
+
+.footer-link{
+    color: #1abc9c;
+}
+
+
+  
+  
+
+  
+  
+  
+
+
+
+
